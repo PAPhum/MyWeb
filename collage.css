@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: atithi-mid;
+    src: url(../font/Athiti-Medium.woff);
+}
+@font-face {
+    font-family: atithi-re;
+    src: url(font/Athiti-Regular.woff);
+}
+h1,h2,h3 {
+    font-family: atithi-mid;
+}
+h4,h5,h6,p,a {
+    font-family: atithi-re;
+}
+
+header{
+    height: 6rem;
+    width: auto;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .headerbar {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 70%;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100% auto;
+    height: calc(100vh - 6rem);
+}
+
+main .main-l {
+    width: 50%;
+    height: calc(100vh - 6rem);
+    background-color: #7bff98;
+}
+
+main .main-r {
+    width: 50%;
+    height: calc(100vh - 6rem);
+    background-color: #918fff;
+}
+
+.main-r .folderSkin {
+    width: auto;
+    height: 10%;
+}
+
+.tier {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    width: 12.5%;
+    flex: 1 0 auto;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 0.5rem; 
+}
+
+button {
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
